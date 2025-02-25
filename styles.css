@@ -3,13 +3,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f4f8; /* Fundo azul claro */
-    color: #333; /* Texto cinza escuro */
+    background-color: #f0f4f8;
+    color: #333;
     line-height: 1.6;
 }
 
 h1, h2 {
-    color: #2196F3; /* Azul vibrante para títulos */
+    color: #2196F3;
 }
 
 /* Header e Logo */
@@ -17,8 +17,8 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #2196F3; /* Azul vibrante */
+    padding: 10px 20px;
+    background-color: #2196F3;
     color: white;
     position: sticky;
     top: 0;
@@ -26,7 +26,17 @@ h1, h2 {
 }
 
 .logo img {
-    height: 50px; /* Ajuste o tamanho do logo conforme necessário */
+    height: 40px; /* Tamanho menor para mobile */
+}
+
+/* Menu Hambúrguer para Mobile */
+.mobile-menu-btn {
+    display: none; /* Escondido por padrão */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .main-nav ul {
@@ -45,29 +55,29 @@ h1, h2 {
 }
 
 .main-nav a:hover {
-    color: #ff9800; /* Laranja ao passar o mouse */
+    color: #ff9800;
 }
 
 /* Botão do Leitor de Áudio */
 .audio-btn {
-    background-color: #ff9800; /* Laranja */
+    background-color: #ff9800;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: background-color 0.3s;
 }
 
 .audio-btn:hover {
-    background-color: #f57c00; /* Laranja mais escuro ao passar o mouse */
+    background-color: #f57c00;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
+    height: 60vh; /* Altura menor para mobile */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,85 +96,82 @@ h1, h2 {
     z-index: -1;
 }
 
-.hero-content {
-    z-index: 1;
-}
-
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem; /* Tamanho menor para mobile */
     margin: 0;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Tamanho menor para mobile */
     margin: 20px 0;
 }
 
 .btn {
-    background-color: #ff9800; /* Laranja */
+    background-color: #ff9800;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 16px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 0.9rem; /* Tamanho menor para mobile */
     transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #f57c00; /* Laranja mais escuro ao passar o mouse */
+    background-color: #f57c00;
 }
 
 /* Sobre a Causa e Denúncias */
 .about-cause, .denounce {
-    padding: 40px 20px;
+    padding: 20px;
     text-align: center;
     background-color: white;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .denounce {
-    background-color: #e3f2fd; /* Azul claro para fundo da seção de denúncias */
+    background-color: #e3f2fd;
 }
 
 /* Itens à Venda */
 .items {
-    padding: 40px 20px;
+    padding: 20px;
     background-color: white;
 }
 
 .item-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores para mobile */
+    gap: 10px;
 }
 
 .item {
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Animais para Adoção */
 .adoption {
-    padding: 40px 20px;
-    background-color: #e3f2fd; /* Azul claro para fundo da seção de adoção */
+    padding: 20px;
+    background-color: #e3f2fd;
 }
 
 .pet-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Colunas menores para mobile */
+    gap: 10px;
 }
 
 .pet-card {
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s;
@@ -181,26 +188,65 @@ h1, h2 {
 
 /* Pagamento via PIX */
 .pix-info {
-    padding: 40px 20px;
+    padding: 20px;
     background-color: white;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
 }
 
 .pix-key {
-    font-size: 1.2rem;
-    color: #2196F3; /* Azul vibrante */
+    font-size: 1rem; /* Tamanho menor para mobile */
+    color: #2196F3;
     font-weight: bold;
 }
 
 /* Rodapé */
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #2196F3; /* Azul vibrante */
+    padding: 10px;
+    background-color: #2196F3;
     color: white;
 }
 
 footer p {
     margin: 5px 0;
+    font-size: 0.9rem; /* Tamanho menor para mobile */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block; /* Mostrar botão do menu hambúrguer */
+    }
+
+    .main-nav {
+        display: none; /* Esconder menu por padrão */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #2196F3;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .main-nav.active {
+        display: block; /* Mostrar menu quando ativo */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
 }

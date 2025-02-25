@@ -45,3 +45,12 @@ audioReaderBtn.addEventListener('click', () => {
 });
 
 // Resto do JavaScript permanece igual
+// Menu Hambúrguer para Mobile
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mainNav = document.getElementById('main-nav');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+});
+
+// Resto do JavaScript permanece igual
