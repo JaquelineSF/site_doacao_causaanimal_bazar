@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazar Beneficente - Ajude os Animais de Planalto!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header com Logo e Menu -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="apap-logo.png" alt="Logo APAP - Associação Proteção Animal de Planalto">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#cause">Sobre a Causa</a></li>
+                <li><a href="#denounce">Denúncias</a></li>
+                <li><a href="#items">Itens à Venda</a></li>
+                <li><a href="#adoption">Adoção</a></li>
+                <li><a href="#pix">PIX</a></li>
+            </ul>
+        </nav>
+        <button id="audio-reader-btn" class="audio-btn">Ouvir Página</button>
+    </header>
+
+    <!-- Hero Section com Vídeo -->
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="pets-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <div class="hero-content">
+            <h1>Ajude os Animais de Planalto</h1>
+            <p>Seu apoio faz a diferença na vida de quem não tem voz.</p>
+            <a href="#cause" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Sobre a Causa -->
+    <section id="cause" class="about-cause">
+        <h2>Sobre a Causa</h2>
+        <p>
+            Milhares de animais sofrem com abandono, maus-tratos e falta de cuidados. Nossa missão é resgatá-los, dar-lhes amor e encontrar um lar seguro. Com sua ajuda, podemos transformar vidas.
+        </p>
+        <p>
+            <strong>Não feche os olhos:</strong> Denuncie maus-tratos e ajude a salvar vidas.
+        </p>
+    </section>
+
+    <!-- Denúncias -->
+    <section id="denounce" class="denounce">
+        <h2>Denuncie Maus-Tratos</h2>
+        <p>
+            Se você presenciar maus-tratos a animais, não se cale. Denuncie! Ligue para o Disque Denúncia Animal ou entre em contato conosco.
+        </p>
+        <p><strong>Disque Denúncia Animal:</strong> (46) 9999-9999</p>
+    </section>
+
+    <!-- Itens à Venda -->
+    <section id="items" class="items">
+        <h2>Itens à Venda</h2>
+        <div class="item-list" id="item-list">
+            <!-- Itens serão adicionados aqui via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Animais para Adoção -->
+    <section id="adoption" class="adoption">
+        <h2>Animais para Adoção</h2>
+        <div class="pet-gallery">
+            <div class="pet-card">
+                <img src="dog1.jpg" alt="Cachorro para adoção">
+                <p><strong>Nome:</strong> Rex</p>
+                <p><strong>Idade:</strong> 2 anos</p>
+            </div>
+            <div class="pet-card">
+                <img src="cat1.jpg" alt="Gato para adoção">
+                <p><strong>Nome:</strong> Mia</p>
+                <p><strong>Idade:</strong> 1 ano</p>
+            </div>
+            <!-- Adicione mais animais aqui -->
+        </div>
+    </section>
+
+    <!-- Pagamento via PIX -->
+    <section id="pix" class="pix-info">
+        <h2>Pagamento via PIX</h2>
+        <p>Para finalizar sua compra, realize o pagamento via PIX para a chave abaixo:</p>
+        <p class="pix-key"><strong>Chave PIX:</strong> (insira a chave PIX aqui)</p>
+        <p>Após o pagamento, envie o comprovante para um dos contatos abaixo.</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p><strong>Contatos:</strong> Tere (46) 99913-0370 | Beti (46) 9910-5835 | Graci (46) 9999-3234</p>
+        <p>Juntos, podemos fazer a diferença na vida dos animais! 🐾</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
